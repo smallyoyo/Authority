@@ -1,0 +1,11 @@
+解决应用jsp时项目404的问题
+    将程序的jar包改为war以便于在外部Tomcat进行部署
+    添加如下依赖
+    	<dependency>
+    			<groupId>org.springframework.boot</groupId>
+    			<artifactId>spring-boot-starter-tomcat</artifactId>
+    			<scope>provided</scope>//这里的scope必须设置为provide
+    	</dependency>
+权限可以通过两种方式来实现控制
+    1、应用url实现程序的权限控制
+    2、应用cdde实现程序的权限控制

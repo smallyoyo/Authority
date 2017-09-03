@@ -1,5 +1,12 @@
 package com.imooc.autority.entity;
+
+import javax.persistence.*;
+
+@Entity(name = "authFunction")
+@Table(name = "auth_function")
 public class authFunction {
+  @Id
+  @GeneratedValue(strategy= GenerationType.IDENTITY)
   private Long id;
   private String name;
   private Long parent_id;
