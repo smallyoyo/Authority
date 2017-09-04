@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding:0;
+}
+section{
+    width: 100%;
+    overflow: hidden;
+}
+
+#head,#body,#foot {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#showback{
+
+}
+
+#head{
+    height: 150px;
+}
+
+#body{
+    height:720px;
+}
+
+#foot{
+   height: 100px;
+}
+
+#loginForm{
+    background-color: white;
+    width: 500px;
+    height: 600px;
+    margin-right: 100px;
+}
