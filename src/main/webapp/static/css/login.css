@@ -1,0 +1,12 @@
+body{
+    background-image: url("../image/login.jpg");
+}
+#loginform{
+    background: white;
+    opacity: 0.9;
+    border-radius:10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left:70px;
+    padding-right: 70px;
+}
