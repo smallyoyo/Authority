@@ -25,20 +25,25 @@ public class loginController {
         ModelAndView modelAndView=new ModelAndView("login");
         return  modelAndView;
     }
+
     @PostMapping("/singin")
-    public  String  signin(HttpServletRequest request, HttpServletResponse response){
+    public  ModelAndView signin(HttpServletRequest request, HttpServletResponse response){
         try {
             request.setCharacterEncoding("utf-8");
             String username=request.getParameter("username");
             String password=request.getParameter("password");
             authUser authuser=loginService.login(username,password);
             if(authuser!=null){
-                System.out.println("true");
+                request.getSession().setAttribute("username",username);
+                ModelAndView modelAndView=new ModelAndView("home");
+                return  modelAndView;
             }
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        return  "登录成功！";
+        ModelAndView modelAndView=new ModelAndView("login");
+        modelAndView.addObject("msg","用户名或密码错误！");
+        return modelAndView;
     }
 
 }

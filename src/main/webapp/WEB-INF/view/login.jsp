@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>欢迎来到哟哟实验室</title>
     <link href="static/css/login.css" rel="stylesheet">
+    <script src="static/js/login.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="container back">
@@ -24,17 +25,17 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <form class="form-horizontal" id="loginform" action="singin" method="post">
+                <form class="form-horizontal" id="loginform">
                     <div class="form-group">
                         <label  class="col-sm-2 control-label">Username</label>
                         <div class="col-sm-10">
-                            <input type="username" name="username" class="form-control" id="inputEmail3">
+                            <input type="username" name="username" class="form-control" id="username">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Password</label>
                         <div class="col-sm-10">
-                            <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                         </div>
                     </div>
                     <div class="form-group">
@@ -48,7 +49,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-block" style="background: #428bca;color:white">Sign in</button>
+                            <button type="button" class="btn btn-block" onclick="sign()" style="background: #428bca;color:white">Sign in</button>
                         </div>
                     </div>
                 </form>
