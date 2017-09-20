@@ -90,11 +90,11 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<dependency>
+		<!--<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<type>jar</type>
-		</dependency>
+		</dependency>-->
+
 	</dependencies>
 
 	<build>
